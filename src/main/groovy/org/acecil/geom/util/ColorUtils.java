@@ -13,7 +13,7 @@ public class ColorUtils {
         U_OFF = .436f,
         V_OFF = .615f;
     private static final long RAND_SEED = 0;
-    private static Random rand = new Random(RAND_SEED);
+    public static Random rand = new Random(RAND_SEED);
 
 
     public static void hsv2rgb(float h, float s, float v, float[] rgb) {

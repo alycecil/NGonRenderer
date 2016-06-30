@@ -12,7 +12,13 @@ class SimpleYTriangleRenderer extends AbstactTriangleRenderer{
 
 		list.addAll(s.getPoints())
 
-		list.sort()
+		list.sort(new ClosureComparator({ Coordinate me,  Coordinate other ->
+			if (me.y < other.y) return -1;
+			if (me.y > other.y) return 1;
+			if (me.x < other.x) return -1;
+			if (me.x > other.x) return 1;
+			0
+		}))
 
 		return list
 	}

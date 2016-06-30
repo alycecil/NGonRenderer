@@ -130,7 +130,7 @@ abstract class AbstactTriangleRenderer implements Renderer{
 				g2.drawPolygon(xs as int[], ys as int[], 3)
 			}
 			if(isDrawNumber()){
-				numbers<<["X$i", avgX/3, avgY/3]
+				numbers<<["$i", avgX/3-7, avgY/3]
 			}
 		}
 

@@ -16,6 +16,7 @@ class PointGridShapeBuilder implements ShapeBuilder{
 				s.points << new Coordinate(x,y)
 			}
 		}
-		return s
+		
+		s
 	}
 }
